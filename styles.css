@@ -108,7 +108,7 @@ h1.temp {
 
 @media (max-width: 350px){
     .search__bar {
-        max-width: 200px;
+        max-width: 160px;
     }
 
     button {
