@@ -13,7 +13,7 @@ body {
     align-items: center;
     height: 100vh;
     background: #242424;
-    background-image: url('https://source.unsplash.com/1600x1200/?golf');
+    background-image: url('https://source.unsplash.com/2560x1440/?golf');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,9 +31,11 @@ body {
 }
 
 .search {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .search__icon {
@@ -79,6 +81,39 @@ input {
 }
 
 h1.temp {
-    margin-bottom: 0;
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.weather__wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: #ffff;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+@media (max-width: 350px){
+    .search__bar {
+        max-width: 200px;
+    }
+
+    button {
+        height: 30px;
+        width: 30px;
+    }
 }
 
