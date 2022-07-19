@@ -41,6 +41,7 @@ body {
 .search__icon {
     color: #ffffffdb;
     font-size: 18px;
+    padding: 4px;
 }
 
 button {
